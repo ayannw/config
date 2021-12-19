@@ -4,16 +4,17 @@ Plug 'ghifarit53/tokyonight-vim'
 Plug 'luochen1990/rainbow'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'ryanoasis/vim-devicons'
+Plug 'bling/vim-airline'
 
 call plug#end()
 
 let g:rainbow_active = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:tokyonight_style = 'night'
+
+map <C-s> :w<CR>
+map <C-q> :q<CR>
+map <C-u> u<CR>
 
 set termguicolors
 set expandtab
