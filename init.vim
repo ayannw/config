@@ -36,6 +36,7 @@ set smartindent
 set number
 set nu
 set cursorline
+set cursorcolumn
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*

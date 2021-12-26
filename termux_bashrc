@@ -12,12 +12,15 @@ export HISTCONTROL=ignoreboth
 
 # Default command line prompt.
 PROMPT_DIRTRIM=2
-PS1='[\[\e[0;32m\]\w\[\e[0m\]] \[\e[0;36m\]λ\[\e[0m\] '
+PS1='\n[\[\e[0;32m\]\w\[\e[0m\]] \[\e[0;36m\]λ\[\e[0m\] '
 
 
 VIMRC='/data/data/com.termux/files/home/.config/nvim/init.vim'
 BASHRC='/data/data/com.termux/files/usr/etc/bash.bashrc'
-CODE='/data/data/com.termux/files/home/storage/shared/code/'
+CODE='/data/data/com.termux/files/home/storage/shared/code/lua'
+
+alias lua="lua5.4"
+alias lx="exa --tree --icons --long --no-user --no-permissions --header --tree -F"
 
 # Handles nonexistent commands.
 # If user has entered command which invokes non-available
