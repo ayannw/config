@@ -24,7 +24,7 @@ let g:floaterm_height = 0.6
 let g:floaterm_position = "top"
 let g:NERDTreeDirArrowExpandable = '►'
 let g:NERDTreeDirArrowCollapsible = '▼'
-let NERDTreeShowLineNumbers=1
+let g:NERDTreeShowLineNumbers=1
 
 map <C-s> :w<CR>
 map <C-q> :q<CR>
