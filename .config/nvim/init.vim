@@ -9,6 +9,8 @@ Plug 'scrooloose/syntastic'
 Plug 'ryanoasis/vim-devicons'
 Plug 'voldikss/vim-floaterm'
 Plug 'dag/vim-fish'
+Plug 'mbbill/undotree'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -24,11 +26,13 @@ let g:floaterm_height = 0.6
 let g:floaterm_position = "top"
 let g:NERDTreeDirArrowExpandable = '►'
 let g:NERDTreeDirArrowCollapsible = '▼'
-let g:NERDTreeShowLineNumbers=1
+let g:NERDTreeShowLineNumbers = 1
+let g:NERDTreeShowHidden = 1
 
 map <C-s> :w<CR>
 map <C-q> :q<CR>
 map <C-u> u<CR>
+map <C-c> :UndotreeToggle<CR>
 map <C-b> :NERDTreeToggle<CR>
 map <C-t> :FloatermToggle<CR>
 
@@ -40,9 +44,9 @@ set expandtab
 set shiftwidth=2
 set autoindent
 set smartindent
-set number relativenumber
 set cursorline
 set cursorcolumn
+set number
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
