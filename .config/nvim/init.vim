@@ -1,22 +1,21 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'ghifarit53/tokyonight-vim'
+Plug 'ayu-theme/ayu-vim'
+Plug 'rust-lang/rust.vim'
 Plug 'luochen1990/rainbow'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree'
 Plug 'bling/vim-airline'
-Plug 'scrooloose/syntastic'
 Plug 'ryanoasis/vim-devicons'
 Plug 'voldikss/vim-floaterm'
-Plug 'dag/vim-fish'
 Plug 'mbbill/undotree'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'vim-syntastic/syntastic'
 
 call plug#end()
 
 let g:rainbow_active = 1
+let g:ayucolor = "dark"
 let g:airline#extensions#tabline#enabled = 1
-let g:tokyonight_style = 'night'
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
@@ -52,4 +51,4 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 set encoding=UTF-8
 
-colorscheme tokyonight
+colorscheme ayu
